@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void startNewActivity(View v) {
+    public void Info(View v) {
         Intent intent = new Intent(this, info.class);
         startActivity(intent);
     }
@@ -32,12 +32,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void goFlow(View v){
+    public void goGithub(View v){
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/GeniusClown/Gloves"));
-        startActivity(browserIntent);
-    }
-    public void goFlow2(View v){
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://geniusclown.github.io/Gloves/"));
         startActivity(browserIntent);
     }
 

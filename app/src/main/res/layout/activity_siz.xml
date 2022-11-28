@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
 
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,29 +10,27 @@
     android:orientation="vertical"
     tools:context=".siz">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+
+    <Button
+        android:id="@+id/button7"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
-            android:backgroundTint="#373A3A"
-            android:onClick="goBack"
-            android:text="Назад"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#373A3A"
+        android:onClick="goBack"
+        android:text="Назад"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:layout_marginTop="52dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
 
         <TextView
@@ -62,4 +60,4 @@
     </ScrollView>
 
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

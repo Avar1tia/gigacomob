@@ -11,28 +11,27 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="184dp"
-        android:layout_height="82dp"
+        android:layout_width="177dp"
+        android:layout_height="80dp"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp"
         android:text="GigaCO"
         android:textColor="#000000"
         android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="345dp"
-        android:layout_height="294dp"
+        android:layout_width="347dp"
+        android:layout_height="277dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/gigaco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints"></ImageView>
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button"
@@ -40,14 +39,14 @@
         android:layout_height="65dp"
         android:layout_marginBottom="236dp"
         android:backgroundTint="#373A3A"
-        android:onClick="startNewActivity"
+        android:onClick="Info"
         android:text="Инфо"
         app:iconTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.721"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        />
 
     <Button
         android:id="@+id/button4"
@@ -70,7 +69,7 @@
         android:layout_marginTop="72dp"
         android:backgroundTint="#373A3A"
         android:onClick="openTools"
-        android:text="Tools "
+        android:text="tools"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -85,12 +84,11 @@
         android:layout_marginStart="4dp"
         android:layout_marginBottom="76dp"
         android:backgroundTint="#373A3A"
-        android:onClick="goFlow"
-        android:rotationX="-4"
-        android:text="Flow"
+        android:onClick="goGithub"
+        android:text="Github"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent" />
 
 
