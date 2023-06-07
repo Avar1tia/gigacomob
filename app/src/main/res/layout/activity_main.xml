@@ -11,85 +11,151 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="177dp"
-        android:layout_height="80dp"
-        android:layout_gravity="center"
+        android:layout_width="194dp"
+        android:layout_height="70dp"
+        android:elevation="@android:dimen/app_icon_size"
+        android:gravity="center"
         android:text="GigaCO"
         android:textColor="#000000"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="347dp"
-        android:layout_height="277dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/gigaco"
+        android:layout_width="567dp"
+        android:layout_height="1077dp"
+        android:src="@drawable/d1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="99dp"
+        android:layout_width="100dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="236dp"
         android:backgroundTint="#373A3A"
         android:onClick="Info"
-        android:text="Инфо"
+        android:text="СТЗ"
         app:iconTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintHorizontal_bias="0.713"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="102dp"
-        android:layout_height="63dp"
-        android:layout_marginBottom="124dp"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
         android:backgroundTint="#373A3A"
         android:onClick="openSiz"
         android:text="СИЗ"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.56"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.355" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="94dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
         android:backgroundTint="#373A3A"
-        android:onClick="openTools"
-        android:text="tools"
+        android:onClick="gotocolor"
+        android:text="Цветовая фильтрация"
+        android:textSize="23px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453" />
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="98dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="76dp"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
         android:backgroundTint="#373A3A"
-        android:onClick="goGithub"
-        android:text="Github"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.528"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:onClick="gotorazmer"
+        android:text="Сортировка по размеру"
+        android:textSize="23px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#373A3A"
+        android:onClick="gotodangerzone"
+        android:text="Опасные зоны"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#373A3A"
+        android:onClick="gokachestvo"
+        android:text="Контроль качества"
+        android:textSize="29px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#373A3A"
+        android:onClick="gotodetali"
+        android:text="Поиск деталей"
+        android:textSize="34px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.735" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#373A3A"
+        android:onClick="goqr"
+        android:text="Сборка по штрих-коду"
+        android:textSize="24px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

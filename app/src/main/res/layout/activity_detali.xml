@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A4D57"
+    tools:context=".detali">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Видеокарта собирается из нескольких основных компонентов:\n
+1. Графический процессор (GPU): Основной мозг видеокарты, который выполняет вычисления и обрабатывает графику. Он состоит из тысяч ядер (CUDA ядра для NVIDIA или Stream процессоры для AMD), которые работают параллельно для выполнения сложных графических задач.\n
+2. Память видеокарты: Видеокарты обычно оснащаются собственной видеопамятью, известной как VRAM (Video Random Access Memory). VRAM используется для хранения текстур, шейдеров и промежуточных результатов вычислений.\n
+3. Разъемы для подключения монитора: Видеокарта имеет разъемы для подключения монитора или других устройств вывода, таких как HDMI, DisplayPort или DVI.
+4. Система охлаждения: Из-за интенсивной работы видеокарты, она может нагреваться. Поэтому видеокарты обычно оснащаются системой охлаждения, которая может включать вентиляторы, радиаторы и тепловые трубки, чтобы отводить излишнее тепло и поддерживать оптимальную температуру работы.\n
+5. Электронная плата: Это основная печатная плата, на которой расположены все компоненты видеокарты, включая GPU, VRAM и другие микросхемы. Электронная плата также содержит разъемы для подключения видеокарты к материнской плате компьютера."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#373A3A"
+        android:onClick="goBack"
+        android:text="назад"
+        app:layout_constraintBottom_toTopOf="@+id/videoView"
+        app:layout_constraintEnd_toStartOf="@+id/button14"
+        app:layout_constraintStart_toEndOf="@+id/button13"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#373A3A"
+        android:onClick="datasetdetali"
+        android:text="Dataset Видеокарт"
+        app:layout_constraintBottom_toTopOf="@+id/videoView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="detali"
+        android:backgroundTint="#373A3A"
+        android:text="Поиск деталей"
+        app:layout_constraintBottom_toTopOf="@+id/videoView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="375dp"
+        android:layout_height="161dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

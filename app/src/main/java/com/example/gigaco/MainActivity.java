@@ -2,11 +2,17 @@ package com.example.gigaco;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableString;
 import android.view.View;
 import android.content.Intent;
-
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.VideoView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -27,14 +33,34 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openTools(View v) {
+    public void gotorazmer(View v) {
         Intent intent = new Intent(this, tools.class);
         startActivity(intent);
     }
 
-    public void goGithub(View v){
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/GeniusClown/Gloves"));
-        startActivity(browserIntent);
+
+    public void gotocolor(View view) {
+        Intent intent = new Intent(this, colors.class);
+        startActivity(intent);
     }
 
+    public void gotodangerzone(View view) {
+        Intent intent = new Intent(this, dangerzone.class);
+        startActivity(intent);
+    }
+
+    public void gokachestvo(View view) {
+        Intent intent = new Intent(this, kachestvo.class);
+        startActivity(intent);
+    }
+
+    public void gotodetali(View view) {
+        Intent intent = new Intent(this, detali.class);
+        startActivity(intent);
+    }
+
+    public void goqr(View view) {
+        Intent intent = new Intent(this, qr.class);
+        startActivity(intent);
+    }
 }

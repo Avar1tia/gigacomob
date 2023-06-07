@@ -20,26 +20,31 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="232dp"
-        android:layout_height="56dp"
-        android:layout_gravity="center"
-        android:text="Сборка видеокарт"
-        android:textColor="#000000"
+        android:layout_width="411dp"
+        android:layout_height="321dp"
+        android:gravity="center"
+        android:text="Наши детали:\n
+Графический процесссор Cachimuchi BTS4010\n
+Втроенная видеопамять на 666ГБ\n
+Разъемы подключения к монитору, с поддержкой частоты до 7ГЦ\n
+Лучшие декодеры\n
+Самая тихая, и охлаждающая охлаждающая система, с 5 винтами"
+        android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.648" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="339dp"
-        android:layout_height="212dp"
+        android:layout_width="315dp"
+        android:layout_height="170dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="324dp"
+        android:layout_marginBottom="260dp"
         android:src="@drawable/plan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,10 +55,24 @@
         android:layout_height="44dp"
         android:layout_marginBottom="4dp"
         android:text="План цеха"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textSize="35dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:layout_width="332dp"
+        android:layout_height="163dp"
+        android:layout_marginBottom="48dp"
+        android:text="Информация о компании\n
+ -> Производство лучших видеокарт, зарекомендовавших себя, по всему миру\n
+ -> Мы используем лучшие графичиские процессооры Gachimuchi\n
+ -> Так же, в каждой видеокрте стоит лучшая память, из всех на рынке"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

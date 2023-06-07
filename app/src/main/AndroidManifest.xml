@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,15 +15,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GigaCO"
         tools:targetApi="31">
-        <activity android:name=".info"/>
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".qr"
+            android:exported="false" />
+        <activity
+            android:name=".detali"
+            android:exported="false" />
+        <activity
+            android:name=".kachestvo"
+            android:exported="false" />
+        <activity
+            android:name=".dangerzone"
+            android:exported="false" />
+        <activity
+            android:name=".colors"
+            android:exported="false" />
+        <activity android:name=".info" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".siz"/>
-        <activity android:name=".tools"/>
+        <activity android:name=".siz" />
+        <activity android:name=".tools" />
     </application>
+
 </manifest>

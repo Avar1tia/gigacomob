@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A4D57"
+    tools:context=".qr">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="201dp"
+        android:layout_height="266dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="10dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="производство видео карт начинается с изготовления печатных плат на производственной линии. Затем на платы устанавливаются компоненты, такие как процессоры, ОЗУ, конденсаторы и другие детали. Каждый компонент проходит тестирование на работоспособность до установки на плату.
+
+После этого печатные платы проходят тестирование в специальных камерах, где проверяется их работоспособность и совместимость с другими компонентами. В случае выявления неисправностей отдельные платы перенаправляются на доработку.
+
+После успешного тестирования печатные платы собираются вместе и проходят финальную сборку. Затем они загружаются в специальные упаковочные коробки, которые защищают компоненты от повреждений при транспортировке.
+
+Наконец, упакованные видео карты загружаются в грузовики и транспортируются на склады, где они готовятся к отправке в магазины и на экспорт в другие страны. Каждая видеокарта имеет серийный номер, что обеспечивает ее трассируемость и позволяет отслеживать происхождение комплектующих при возможной необходимости обслуживания или замены." />
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#373A3A"
+        android:onClick="goBack"
+        android:text="Назад"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoView" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#373A3A"
+        android:onClick="qrcode"
+        android:text="QR CODE"
+        app:layout_constraintBottom_toTopOf="@+id/videoView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView1" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="411dp"
+        android:layout_height="247dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

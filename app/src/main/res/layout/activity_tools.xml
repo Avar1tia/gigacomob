@@ -25,11 +25,38 @@
         android:layout_height="74dp"
         android:layout_marginBottom="328dp"
         android:backgroundTint="#373A3A"
-        android:onClick="openFlow"
-        android:text="roboflow"
+        android:onClick="openrazmer"
+        android:text="Сортировка по размеру"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Размеры видеокарт могут варьироваться в зависимости от модели и производителя. Обычно видеокарты имеют стандартные форм-факторы, которые позволяют их устанавливать в большинство компьютерных корпусов. Ниже приведены некоторые распространенные форм-факторы видеокарт:\n
+1. ATX: Стандартный размер для настольных компьютеров. Обычно имеет размеры около 30 см в длину и 13 см в высоту.\n
+2. Mini-ITX: Более компактный форм-фактор для мини-компьютеров и систем SFF (Small Form Factor). Может иметь размеры около 17 см в длину и 9 см в высоту.\n
+3. Dual-slot: Этот термин описывает видеокарты, которые занимают два слота расширения на задней панели компьютера из-за своей ширины или конструкции охлаждения. Такие карты обычно имеют большую толщину.\n
+4. Triple-slot: Некоторые более мощные и производительные видеокарты могут занимать три слота расширения из-за более массивных систем охлаждения."
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="334dp"
+        android:layout_height="279dp"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
